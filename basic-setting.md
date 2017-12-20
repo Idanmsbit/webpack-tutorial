@@ -1,6 +1,12 @@
 # Basic setting of Webpack using NPM
 
-In this guide we'll be creating a working Webpack environment from scratch.
+In this guide we'll be creating a working Webpack environment from scratch. Our final app will have a basic working webpack configuration, and a local development server we can run in our local machine.
+
+We will do the following steps:
+* First step: Creating project folder and installing webpack.
+* Second step: Creating the files for our application.
+* Third step: Installing webpack development server
+* Forth step: Configuring our app a little more with loaders and plugins.
 
 _Before we begin, it's important that you'll have [NodeJS](https://nodejs.org/) and [NPM](https://www.npmjs.com/
 ) installed on your machine:_
@@ -35,3 +41,27 @@ After webpack is installed, we can start creating the files we will be needing f
 * entry.js
 * greeting.js
 * webpack.config.js
+
+##### Index.html 
+
+Lets Start from writnig our index.html file
+
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <title>My App</title>
+  <script src="bundle.js"></script>
+</head>
+
+<body>
+  <h1 class="app-title"></h1>
+</body>
+
+</html>
+```
